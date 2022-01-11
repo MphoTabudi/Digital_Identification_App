@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="login-row align-items-center">
+      <ion-col size="10" offset="1">
+        <ion-card class="login-card ion-padding">
+          <ion-card-header class="login-header ion-text-center">Click here to Login</ion-card-header>
+          <ion-button class="login-button" (click)="login()" fill="none">
+            <ion-icon name="lock-closed-outline" slot="icon-only" color="primary"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
