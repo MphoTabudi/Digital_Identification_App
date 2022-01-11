@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="none" routerLink="/home">
+      <ion-icon size="large" name="close-outline" color="primary"></ion-icon>
+    </ion-button>
+    <ion-title color="primary">Send ID</ion-title>
+    <ion-button slot="end" fill="none">
+      <ion-icon size="large" name="send-outline" color="primary"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="mailID()">
+    <ion-item>
+      <ion-label>To</ion-label>
+      <ion-input type="email" name="mailTo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cc/Bcc</ion-label>
+      <ion-input type="email" name="cc"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Subject</ion-label>
+      <ion-input name="subject"></ion-input>
+    </ion-item>
+    <ion-img class="ion-margin" src="/assets/img/id-doc-template.jpg"></ion-img>
+    <ion-item>
+      <ion-textarea name="text" placeholder="Enter your message here..."></ion-textarea>
+    </ion-item>
+    <ion-button class="ion-margin" type="submit">Send email</ion-button>
+  </form>
+</ion-content>
